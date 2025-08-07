@@ -14,15 +14,15 @@ const Hero = () => {
     HeroContent(heroImage, heroTagCon, buyMeRef, buyMeSpan);
     gsap.to(heroImage.current, {
       scrollTrigger: {
-        trigger: "#featureSection",
-        start: "top bottom",
-        end: "top 5%",
+        trigger: "#modelsCon",
+        start: "top 100%",
+        end: "center 60%",
         scrub: true,
       },
-      y: "130vh",
-      x: "-60vw",
-      scale: 0.8,
-      rotate: -90,
+      y: "278vh",
+      x: "-30vw",
+      scale: 0.7,
+      rotate: 0,
       ease: "cubic-bezier(0.76, 0, 0.24, 1)",
     });
   }, []);
@@ -34,7 +34,7 @@ const Hero = () => {
         style={{
           clipPath: "  polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
         }}
-        className="flex flex-col items-center justify-center text-center leading-13 text-[6vh] absolute left-3/5 top-3/5 transform -translate-x-3/5 -translate-y-3/5"
+        className="flex flex-col items-center justify-center text-center leading-13 text-[6dvh] absolute left-3/5 top-3/5 transform -translate-x-3/5 -translate-y-3/5"
       >
         <span className="HeroTag w-full ">SHOOT</span>
         <span className="HeroTag w-full  ">PERFECTION</span>
@@ -44,7 +44,7 @@ const Hero = () => {
         style={{ clipPath: "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%)" }}
         src="/images/BrownCamera.png"
         alt=""
-        className=" w-full absolute left-3/10 top-2/10 transform -translate-x-3/10 -translate-y-3/10 origin-center"
+        className=" w-full z-20 absolute left-3/10 top-2/10 transform -translate-x-3/10 -translate-y-3/10 origin-center"
       />
       <div className="w-full h-[50%] flex justify-center items-center">
         <div
@@ -52,7 +52,7 @@ const Hero = () => {
           style={{
             clipPath: "polygon(100% 100%, 0% 100%, 0% 100%, 100% 100%)",
           }}
-          className="relative border-2 border-[#993e05] px-[10dvw] py-[0.5dvh] text-[3vh] rounded-full text-[#993e05] font-bold overflow-hidden"
+          className="relative border-2 border-[#993e05] px-[10dvw] py-[0.5dvh] text-[3dvh] rounded-full text-[#993e05] font-bold overflow-hidden"
         >
           <span
             ref={buyMeSpan}

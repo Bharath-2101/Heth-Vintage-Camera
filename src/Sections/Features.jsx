@@ -30,10 +30,10 @@ const Features = () => {
       <div className="p-3">
         <div className="border p-2 h-full w-full">
           <div id="limitEd">limited edition</div>
-          <div className="mainTitle text-[3.5vh] font-black mb-3">
+          <div className="mainTitle text-[3.5dvh] font-black mb-3">
             AURELUX 35 Classic
           </div>
-          <div className="leading-5 p-2 text-[1.6vh]">
+          <div className="leading-5 p-2 text-[1.6dvh]">
             Introducing the AURELUX 35 Classic — a limited-edition masterpiece
             born from a love of timeless design and mechanical precision. With
             only a select number ever made, this collector’s gem blends
@@ -43,22 +43,19 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-[2fr_3fr]">
-        <div />
+      <div className="grid">
         <div className="grid grid-rows-3 p-2 gap-2">
           {Features.map((Feature, index) => (
             <div key={index} className="border grid grid-rows-[2fr_3fr] ">
               <div className="grid grid-cols-[1fr_2fr]">
-                <span className="text-[3vh]  flex justify-center items-center font-black">
+                <span className="text-[3.5dvh]  flex justify-center items-center font-black">
                   {Feature.efficency + "%"}
                 </span>
-                <span className="flex justify-center items-center font-medium text-[1.8vh]">
+                <span className="flex justify-center items-center font-medium text-[2.5dvh]">
                   {Feature.title}
                 </span>
               </div>
-              <div className="text-[1.5vh] px-2 leading-4 border-t-1">
-                {Feature.desc}
-              </div>
+              <div className="text-[2dvh] px-2 border-t-1">{Feature.desc}</div>
             </div>
           ))}
         </div>

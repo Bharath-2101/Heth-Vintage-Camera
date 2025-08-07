@@ -6,16 +6,28 @@ const Footer = () => {
   return (
     <div
       style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" }}
-      className=" w-screen bg-[#5c5740] h-[90vh] relative"
+      className=" w-screen bg-[#5c5740] h-[90dvh] relative"
     >
-      <div className="fixed bottom-0 w-full h-[90vh] flex flex-col justify-between items-center py-[5vh]">
+      <div className="fixed bottom-0 w-full h-[90dvh] flex flex-col justify-between items-center py-[5dvh]">
         <div className="flex-1 w-full grid grid-rows-[2fr_1fr]">
-          <div className="" />
+          <div className="grid grid-rows-[2fr_1fr]">
+            <div className="flex justify-center items-center">
+              <img
+                src="/images/HethLogo.svg"
+                alt=""
+                className="h-full
+              "
+              />
+            </div>
+            <span className="flex justify-center items-center mainTitle text-[#59270E] text-[7vh] font-black">
+              HETH
+            </span>
+          </div>
           <div className="flex flex-row">
             {["ABOUT US", "VARIANTS", "CONTACT US"].map((text, index) => (
               <div
                 key={index}
-                className="relative flex-1 flex justify-center items-center font-[500] mainTitle text-[1.5vh]"
+                className="relative flex-1 flex justify-center items-center font-[500] mainTitle text-[1.5dvh]"
               >
                 <span className="ContactSpan cursor-pointer relative text-[#59270E]  px-3 py-1.5 rounded-full overflow-hidden ">
                   <span className="relative z-2">{text}</span>
