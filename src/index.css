@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.navLinks {
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 900;
+  color: #f1e1d1;
+}
+
+.HeroTag {
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 900;
+  color: #993e05;
+}
+
+#limitEd {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+.mainTitle {
+  font-family: "Rubik Distressed", system-ui;
+  letter-spacing: 0.7px;
+}
+.featureCon {
+  font-family: "Space Grotesk";
+}
+.cartoonText {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.ContactSpan span:nth-child(2) {
+  clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
+  transition: all 0.5s ease;
+}
+.ContactSpan:hover span:nth-child(2) {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@import "tailwindcss";
