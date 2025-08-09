@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.navLinks {
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 900;
+  position: relative;
+  span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  span:nth-child(1) {
+    transform: translateY(0%);
+    z-index: 1;
+  }
+  span:nth-child(2) {
+    transform: translateY(100%);
+    z-index: 1;
+  }
+}
+
+.navLinks:hover {
+  span:nth-child(1) {
+    transform: translateY(-100%);
+  }
+  span:nth-child(2) {
+    transform: translateY(0%);
+  }
+}
+
+.HeroTag {
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 900;
+  color: #59270e;
+}
+
+#limitEd {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+.mainTitle {
+  font-family: "Rubik Distressed", system-ui;
+  letter-spacing: 0.7px;
+}
+.featureCon {
+  font-family: "Space Grotesk";
+}
+.cartoonText {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.BuyMe {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  cursor: pointer;
+  span {
+    transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    background-color: #59270e;
+    transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    z-index: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+  }
+
+  &:hover {
+    color: #f1e1d1;
+    &::before,
+    &::after {
+      height: 102%;
+      width: 102%;
+    }
+  }
+}

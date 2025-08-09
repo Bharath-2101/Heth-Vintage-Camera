@@ -14,35 +14,45 @@ const OtherModels = () => {
   return (
     <div
       ref={modelsRef}
-      id="modelsCon"
-      className=" h-[100dvh] w-[100dvw] grid grid-rows-[1fr_9fr]"
+      id="VARIANTS"
+      className=" h-[100dvh] w-[100dvw] grid grid-rows-[3fr_9fr]"
     >
       <div className="flex flex-col justify-center items-center">
-        <div className="w-full text-center cartoonText">Models</div>
-        <div className="text-[4dvh] mainTitle text-[#993e05] w-full text-center font-black">
+        <div className="w-full text-center cartoonText md:text-[5vh]">
+          Models
+        </div>
+        <div className="text-[4dvh] mainTitle text-[#59270e] md:text-[8dvh] w-full text-center font-black">
           COLLECTIONS
         </div>
       </div>
-      <div className="grid grid-rows-3">
-        <div className="grid grid-rows-[4fr_1fr]">
+      <div className="grid grid-rows-3 md:grid-cols-3">
+        <div className="grid grid-rows-[4fr_1fr] md:flex md:items-center md:justify-between md:flex-col">
           <div className="flex justify-center items-center">
-            <img src="/images/CharcolCamera.png" alt="" className="h-45" />
+            <img
+              src="/images/CharcolCamera.png"
+              alt=""
+              className="h-45 md:w-full md:h-auto"
+            />
           </div>
-          <div className="flex justify-center  font-black cartoonText text-[2.5dvh]">
+          <div className="flex justify-center md:text-[5dvh]  font-black cartoonText text-[2.5dvh]">
             BROWN VARIANT
           </div>
         </div>
-        <div className="grid grid-rows-[4fr_1fr]">
+        <div className="grid grid-rows-[4fr_1fr] md:flex md:items-center md:justify-between md:flex-col">
           <div className="flex justify-center items-center"></div>
-          <div className="flex justify-center items-center font-black cartoonText text-[2.5dvh]">
+          <div className="flex justify-center items-center md:text-[5dvh] font-black cartoonText text-[2.5dvh]">
             THE OG
           </div>
         </div>
-        <div className="grid grid-rows-[4fr_1fr]">
+        <div className="grid grid-rows-[4fr_1fr] md:flex md:items-center md:justify-between md:flex-col">
           <div className="flex justify-center items-center">
-            <img src="/images/GreenCamera.png" alt="" className="h-45" />
+            <img
+              src="/images/GreenCamera.png"
+              alt=""
+              className="h-45 md:w-full md:h-auto"
+            />
           </div>
-          <div className="flex justify-center  font-black cartoonText text-[2.5dvh]">
+          <div className="flex justify-center md:text-[5dvh]  font-black cartoonText text-[2.5dvh]">
             GREEN VARIANT
           </div>
         </div>

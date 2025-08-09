@@ -24,16 +24,18 @@ const Features = () => {
   return (
     <div
       ref={featureRef}
-      id="featureSection"
-      className="featureCon h-[100dvh] w-[100dvw] grid grid-rows-[1fr_2fr]"
+      id="ABOUT"
+      className="featureCon h-[100dvh] w-[100dvw] grid grid-rows-[1fr_2fr] md:grid-cols-2 px-4 text-[#59270e]"
     >
-      <div className="p-3">
+      <div className="py-2">
         <div className="border p-2 h-full w-full">
-          <div id="limitEd">limited edition</div>
-          <div className="mainTitle text-[3.5dvh] font-black mb-3">
+          <div id="limitEd" className="md:text-[3.5dvh]">
+            limited edition
+          </div>
+          <div className="mainTitle text-[3.5dvh] md:text-[7dvh] font-black mb-3">
             AURELUX 35 Classic
           </div>
-          <div className="leading-5 p-2 text-[1.6dvh]">
+          <div className="leading-5 p-2 text-[1.6dvh] md:text-[3.5dvh] md:leading-10">
             Introducing the AURELUX 35 Classic — a limited-edition masterpiece
             born from a love of timeless design and mechanical precision. With
             only a select number ever made, this collector’s gem blends
@@ -43,22 +45,23 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className="grid">
-        <div className="grid grid-rows-3 p-2 gap-2">
-          {Features.map((Feature, index) => (
-            <div key={index} className="border grid grid-rows-[2fr_3fr] ">
-              <div className="grid grid-cols-[1fr_2fr]">
-                <span className="text-[3.5dvh]  flex justify-center items-center font-black">
-                  {Feature.efficency + "%"}
-                </span>
-                <span className="flex justify-center items-center font-medium text-[2.5dvh]">
-                  {Feature.title}
-                </span>
-              </div>
-              <div className="text-[2dvh] px-2 border-t-1">{Feature.desc}</div>
+
+      <div className="grid grid-rows-3 p-2 gap-2">
+        {Features.map((Feature, index) => (
+          <div key={index} className="border grid grid-rows-[2fr_3fr] ">
+            <div className="grid grid-cols-[1fr_2fr]">
+              <span className="text-[3.5dvh] md:text-[8dvh]  flex justify-center items-center font-black">
+                {Feature.efficency + "%"}
+              </span>
+              <span className="flex justify-center items-center font-medium text-[2.5dvh] md:text-[6dvh]">
+                {Feature.title}
+              </span>
             </div>
-          ))}
-        </div>
+            <div className="text-[2dvh] md:text-[3dvh] px-2 border-t-1">
+              {Feature.desc}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const CameraSketch = () => {
   return (
-    <div className="w-[100dvw] h-[60dvw] flex justify-center items-center">
+    <div className="w-[100dvw] md:w-[50dvw] md:h-[30dvw] h-[60dvw] flex justify-center items-center">
       <div className="h-5/6 w-[90%] grid grid-rows-[2fr_5fr_1fr] border-none outline-none shadow-none">
         <div className="grid grid-rows-[6fr_1fr] border-none outline-none shadow-none">
           <div className="relative border-none outline-none shadow-none">
